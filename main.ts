@@ -78,16 +78,14 @@ namespace WiFiBit {
     //% blockId="wfb_wifi_clg" block="connection au Wifi du collège"
     export function connectToWiFiNetworkCLG(): void {
         // Connect to AP:
-        ssid: string = mdmaison
-        key: string = joelafrite
-        writeToSerial("AT+CWJAP=\"" + ssid + "\",\"" + key + "\"", 6000)
+        writeToSerial("AT+CWJAP="\"mdmaison"\","\"joelafrite"\"", 6000)
     }
     
     
     /**
      * Disconnect from WiFi network.
      */
-    //% weight=98
+    //% weight=98\"mdmaison"\",
     //% blockId="wfb_wifi_off" block="disconnect from WiFi network"
     export function disconnectFromWiFiNetwork(): void {
         // Disconnect from AP:
