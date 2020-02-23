@@ -72,6 +72,17 @@ namespace WiFiBit {
     }
 
     /**
+     * Connection au Wifi du collège.
+     */
+    //% weight=98
+    //% blockId="wfb_wifi_clg" block="connection au Wifi du collège"
+    export function connectToWiFiNetworkCLG(): void {
+        // Connect to AP:
+        writeToSerial("AT+CWJAP="mdmaison","joelafrite"", 6000)
+    }
+    
+    
+    /**
      * Disconnect from WiFi network.
      */
     //% weight=98
