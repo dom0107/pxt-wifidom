@@ -70,16 +70,6 @@ namespace WiFiBit {
         // Connect to AP:
         writeToSerial("AT+CWJAP=\"" + ssid + "\",\"" + key + "\"", 6000)
     }
-
-    /**
-     * Connexion WIFI CLG.
-     */
-    //% weight=98
-    //% blockId="wfb_wifi_clg" block="Connexion wifi CLG"
-    export function connectToWiFiNetworkclg(): void {
-        // Disconnect from AP:
-        writeToSerial("AT+CWJAP=\"domiphone\",\"traam2019\"", 6000)
-    }
    
     /**
      * Disconnect from WiFi network.
@@ -89,6 +79,15 @@ namespace WiFiBit {
     export function disconnectFromWiFiNetwork(): void {
         // Disconnect from AP:
         writeToSerial("AT+CWQAP", 6000)
+    }
+    
+    /**
+     * Wifi collège.
+     */
+    //% weight=99
+    //% blockId="wifi_clg" block="connection WIFI clg"
+    export function wificollege(): void {
+        writeToSerial("AT+CWJAP=\"domiphone\",\"traam2019\"", 6000)
     }
 
     /**
