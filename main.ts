@@ -71,6 +71,16 @@ namespace WiFiBit {
         writeToSerial("AT+CWJAP=\"" + ssid + "\",\"" + key + "\"", 6000)
     }
 
+        /**
+     * Connect to WiFi network.
+     */
+    //% weight=98
+    //% blockId="wfb_wifi_on_clg" block="connection WIFI clg"
+    export function connectToWiFiNetwork(ssid: string, key: string): void {
+        // Connect to AP:
+        writeToSerial("AT+CWJAP=\"domiphone\",\"traam2019\"", 6000)
+    }
+    
     /**
      * Disconnect from WiFi network.
      */
