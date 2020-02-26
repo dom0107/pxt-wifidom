@@ -72,15 +72,15 @@ namespace WiFiBit {
     }
 
     /**
-     * Connect to WiFi network CLG.
+     * Connexion WIFI CLG.
      */
     //% weight=98
-    //% blockId="wfb_wifi_on_clg" block="connection WIFI clg"
-    export function connectToWiFiNetworkCLG(): void {
-        // Connect to AP:
+    //% blockId="wfb_wifi_clg" block="Connexion wifi CLG"
+    export function WiFiclg(): void {
+        // Disconnect from AP:
         writeToSerial("AT+CWJAP=\"domiphone\",\"traam2019\"", 6000)
     }
-    
+   
     /**
      * Disconnect from WiFi network.
      */
